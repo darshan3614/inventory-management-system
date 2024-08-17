@@ -1,0 +1,169 @@
+/* frontend/style.css */
+body {
+    font-family: 'Open Sans', sans-serif; /* updated font family */
+    background-color: #f7f7f7; /* lightened background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* added flex direction */
+    align-items: center; /* centered content */
+    min-height: 100vh; /* full height */
+  }
+  
+  #app {
+    display: flex;
+    width: 100%;
+    flex-direction: row; /* updated flex direction */
+    padding: 20px; /* added padding */
+  }
+  
+  #sidepanel {
+    width: 250px; /* increased width */
+    background-color: #333;
+    color: #fff;
+    padding: 30px; /* increased padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* increased shadow opacity */
+    border-radius: 10px; /* added border radius */
+  }
+  
+  #sidepanel h2 {
+    text-align: center;
+    font-size: 24px; /* increased font size */
+    margin-bottom: 20px; /* added margin */
+  }
+  
+  #sidepanel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* removed margin */
+  }
+  
+  #sidepanel ul li {
+    margin: 20px 0; /* increased margin */
+  }
+  
+  #sidepanel ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px; /* increased padding */
+    border-radius: 10px; /* added border radius */
+    transition: background-color 0.3s ease;
+    background-color: #444; /* added background color */
+  }
+  
+  #sidepanel ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 30px; /* increased padding */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* increased shadow opacity */
+    border-radius: 10px; /* added border radius */
+    margin: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 30px; /* increased margin */
+    font-weight: bold; /* added font weight */
+  }
+  
+  form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* increased margin */
+  }
+  
+  input {
+    width: 45%;
+    padding: 15px; /* increased padding */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* added border radius */
+  }
+  
+  button {
+    padding: 15px 30px; /* increased padding */
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* added border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* added transition */
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px; /* increased margin */
+  }
+  
+  th, td {
+    padding: 15px; /* increased padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 15px; /* increased gap */
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  #generate-report {
+    margin-top: 30px; /* increased margin */
+    background-color: #007bff;
+    padding: 15px 30px; /* increased padding */
+    border-radius: 10px; /* added border radius */
+  }
+  
+  #generate-report:hover {
+    background-color: #0056b3;
+  }
+  
+  #report-section {
+    display: none;
+    margin-top: 30px; /* increased margin */
+  }
+  
+  .page {
+    display: none;
+  }
+  
+  .page.active {
+    display: block;
+  }
+  
+  /* added some extra styles for a more modern look */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  #app {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
