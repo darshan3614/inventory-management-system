@@ -1,0 +1,6 @@
+Steps
+1. npm install
+2. a} cd frontend 
+   b} python -m http.server 8000
+3. a} cd backend (open in differnet terminal)
+   b} npm start
