@@ -4,3 +4,6 @@ Steps
    b} python -m http.server 8000
 3. a} cd backend (open in differnet terminal)
    b} npm start
+
+Login : test
+pass : test123
